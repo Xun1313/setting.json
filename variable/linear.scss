@@ -1,0 +1,25 @@
+/* .box {
+      width: 200px;
+      height: 200px;
+      background-image: linear-gradient(to right, red, yellow, green, transparent 70%), 
+      linear-gradient(to bottom, red, yellow, green, transparent 70%);
+      background-size: 30px 30px,60px 60px
+    } */
+/* .box1{
+  background-image: linear-gradient(red, yellow,green);
+  width: 200px;
+
+  height: 200px;
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  .test {
+    border: 1px solid yellow;
+    &_hi {
+      color: green;
+    }
+  }
+}

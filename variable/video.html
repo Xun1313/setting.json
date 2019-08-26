@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <video controls src="http://aaa.99kubo.tv/api/video/play?code=PYFY450843&ui=0&pt=1&rt=360P&ts=1563512407&ip=219.69.66.49&mo=download&signature=cb95e0d88d7e71aadd04077eb2ded87e6dbcf778"></video> -->
+  
+  <!-- <script>
+    document.querySelector('video').defaultPlaybackRate = 2.0;
+    document.querySelector('video').play();
+    
+  </script> -->
+  
+  <video id="my-video" src="http://aaa.99kubo.tv/api/video/play?code=PYFY450843&ui=0&pt=1&rt=360P&ts=1563512407&ip=219.69.66.49&mo=download&signature=cb95e0d88d7e71aadd04077eb2ded87e6dbcf778"></video>
+</body>
+
+<script type="text/javascript">
+  /* play video twice as fast */
+  document.getElementById("my-video").defaultPlaybackRate = 2.0;
+  document.getElementById("my-video").play();
+
+  /* now play three times as fast just for the heck of it */
+  //document.getElementById("my-video").playbackRate = 3.0;
+</script>
+</html>

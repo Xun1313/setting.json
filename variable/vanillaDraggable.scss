@@ -1,0 +1,59 @@
+body {
+  background-color: darksalmon;
+}
+
+[draggable='true'] {
+  /*
+   To prevent user selecting inside the drag source
+  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+.fill {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  bottom: 115px;
+  left: 5px;
+}
+
+.fill:first-child{
+  top: 5px;
+}
+.fill:active{
+  cursor: pointer!important;
+}
+
+.one {
+  background-image: url('https://picsum.photos/200/300/');
+}
+.two {
+  background-image: url('https://picsum.photos/200/300/');
+}
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: 3px salmon solid;
+  background-color: white;
+  position: relative;
+}
+
+.hold {
+  border: solid 4px #ccc;
+}
+
+.invisible {
+  display: none;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
