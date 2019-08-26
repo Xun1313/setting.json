@@ -1,0 +1,69 @@
+//config設定
+{
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true, // 貼上程式碼時會自動幫你排版
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "liveServer.settings.port": 8080,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "explorer.confirmDelete": false,
+  "prettier.printWidth": 220, //每行文字多長換行預設80
+  "files.autoSave": "afterDelay",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath":"/style"
+    }
+    /*{//壓縮後的
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/dist/style"
+    }*/
+  ],
+  "liveSassCompile.settings.excludeList": [
+    //哪些不要被compile
+    "**/node_modules/**",
+    ".vscode/**"
+  ],
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.generateMap": false,//出現scss和css的對照
+  "git.ignoreMissingGitWarning": true,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts",
+    "data.json"
+  ],
+  //避免自動更新畫面
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",//我把減的符號刪掉,就能雙擊選到例如:hello-hi
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ejs]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveSassCompile.settings.showOutputWindow": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSaveDelay": null,
+  "files.associations ": {
+    "*.ejs": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "terminal.integrated.rendererType": "dom",
+}
